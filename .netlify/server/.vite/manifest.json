@@ -1,0 +1,182 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js"
+    ]
+  },
+  "_client.js": {
+    "file": "chunks/client.js",
+    "name": "client",
+    "imports": [
+      "_exports.js"
+    ]
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "name": "index",
+    "imports": [
+      "_ssr2.js"
+    ]
+  },
+  "_index2.js": {
+    "file": "chunks/index2.js",
+    "name": "index"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_ssr2.js",
+      "_ssr.js"
+    ],
+    "dynamicImports": [
+      "src/hooks.server.ts"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js",
+    "name": "ssr"
+  },
+  "_ssr2.js": {
+    "file": "chunks/ssr2.js",
+    "name": "ssr"
+  },
+  "_stores.js": {
+    "file": "chunks/stores.js",
+    "name": "stores",
+    "imports": [
+      "_ssr2.js",
+      "_client.js"
+    ]
+  },
+  "_supabase.js": {
+    "file": "chunks/supabase.js",
+    "name": "supabase"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js",
+      "_stores.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_index2.js",
+      "_exports.js",
+      "_index.js"
+    ]
+  },
+  "src/hooks.server.ts": {
+    "file": "chunks/hooks.server.js",
+    "name": "hooks.server",
+    "src": "src/hooks.server.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_supabase.js"
+    ]
+  },
+  "src/routes/+layout.server.ts": {
+    "file": "entries/pages/_layout.server.ts.js",
+    "name": "entries/pages/_layout.server.ts",
+    "src": "src/routes/+layout.server.ts",
+    "isEntry": true
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js",
+      "_stores.js",
+      "_index.js",
+      "_ssr.js",
+      "_client.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.D3SEAvLE.css"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js"
+    ]
+  },
+  "src/routes/api/jotform/+server.ts": {
+    "file": "entries/endpoints/api/jotform/_server.ts.js",
+    "name": "entries/endpoints/api/jotform/_server.ts",
+    "src": "src/routes/api/jotform/+server.ts",
+    "isEntry": true
+  },
+  "src/routes/auth/+page.server.ts": {
+    "file": "entries/pages/auth/_page.server.ts.js",
+    "name": "entries/pages/auth/_page.server.ts",
+    "src": "src/routes/auth/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_supabase.js",
+      "_index2.js"
+    ]
+  },
+  "src/routes/auth/+page.svelte": {
+    "file": "entries/pages/auth/_page.svelte.js",
+    "name": "entries/pages/auth/_page.svelte",
+    "src": "src/routes/auth/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js",
+      "_index.js"
+    ]
+  },
+  "src/routes/dashboard/+page.svelte": {
+    "file": "entries/pages/dashboard/_page.svelte.js",
+    "name": "entries/pages/dashboard/_page.svelte",
+    "src": "src/routes/dashboard/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js",
+      "_supabase.js",
+      "_client.js"
+    ]
+  },
+  "src/routes/form/+page.svelte": {
+    "file": "entries/pages/form/_page.svelte.js",
+    "name": "entries/pages/form/_page.svelte",
+    "src": "src/routes/form/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js"
+    ]
+  },
+  "src/routes/home/+page.svelte": {
+    "file": "entries/pages/home/_page.svelte.js",
+    "name": "entries/pages/home/_page.svelte",
+    "src": "src/routes/home/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr2.js",
+      "_client.js"
+    ]
+  }
+}
