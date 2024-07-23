@@ -8,8 +8,8 @@
  
  </script>
  
- <h1 class="text-4xl font-bold text-center">Aura Fem Health</h1>
- <div class="flex items-center justify-center min-h-screen bg-gray-100">
+ <h1 class="text-4xl font-bold text-center">Aura Health</h1>
+ <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
    <div class="w-full max-w-md p-8 space-y-6 bg-white shadow-md rounded-lg">
      <h1 class="text-2xl font-bold text-center">{ $isNewUser ? 'Create Account' : 'Login' }</h1>
      {#if $errorMessage}
@@ -35,7 +35,6 @@
        <button on:click={() => isNewUser.set(!$isNewUser)} class="text-blue-500 hover:underline">
          { $isNewUser ? 'Already have an account? Login' : "Don't have an account? Sign Up" }
        </button>
-     </div>
+     </div>     
    </div>
  </div>
- 

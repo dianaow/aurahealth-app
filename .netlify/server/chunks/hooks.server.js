@@ -1,7 +1,8 @@
-import { s as supabase } from "./supabase.js";
+import { supabase } from '$lib/supabase';
+
 const handle = async ({ event, resolve }) => {
   const { data, error } = await supabase.auth.getSession();
-  console.log("session", data.session);
+
   if (data.session.user) {
     event.locals.user = data.session.user;
   } else {

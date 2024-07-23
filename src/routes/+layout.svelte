@@ -7,7 +7,6 @@
   const nakedPaths = ['/auth']
   $: naked = nakedPaths.includes($page.url.pathname)
   $: user = data?.user
-  $: console.log('user', user)
 </script>
 {#if naked}
   <slot />

@@ -7,17 +7,16 @@ export const actions: Actions = {
     const email = form.get('email') as string;
     const password = form.get('password') as string;
 
-    console.log('Signin attempt:', { email, password });
-
     const { error, data } = await supabase.auth.signInWithPassword({ email, password });
 
     if (error) {
-      console.error('Login error:', error);
       return { error: error.message };
     }
 
-    console.log('Signin successful:', data)
-
+    if (data && data.user.user_metadata.role === 'admin') {
+      throw redirect(302, '/admin');
+    }
+  
     throw redirect(302, '/home');
   },
 
@@ -26,16 +25,11 @@ export const actions: Actions = {
     const email = form.get('email') as string;
     const password = form.get('password') as string;
 
-    console.log('Signup attempt:', { email, password });
-
     const { error, data } = await supabase.auth.signUp({ email, password });
 
     if (error) {
-      console.error('Login error:', error);
       return { error: error.message };
     }
-
-    console.log('Signup successful:', data);
 
     throw redirect(302, '/home');
   },
