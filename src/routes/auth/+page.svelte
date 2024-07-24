@@ -37,4 +37,16 @@
        </button>
      </div>     
    </div>
+   <div>
+    <div class='m-4'>
+      <p class="text-gray-400">Test user credentials</p>
+      <p class="text-gray-400">Email: user@test.com</p>
+      <p class="text-gray-400">PW: securepassword</p>
+    </div>
+    <div class='m-4'>
+      <p class="text-gray-400">Test admin credentials</p>
+      <p class="text-gray-400">Email: admin1@test.com</p>
+      <p class="text-gray-400">PW: securepassword</p>
+    </div>
+  </div>
  </div>
